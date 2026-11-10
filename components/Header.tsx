@@ -72,7 +72,9 @@ export default function Header() {
           <div className="relative flex items-center justify-between py-3 md:py-4 px-6 md:px-8 bg-background/80 backdrop-blur-md border border-text-secondary/20 rounded-full shadow-lg transition-colors duration-300">
             <div className="flex flex-row items-center">
               {/* Typographic Logo */}
-              <span className="text-xl md:text-2xl font-black text-text-primary tracking-tighter">PORTFOLIO.</span>
+              <span className="font-serif italic text-2xl md:text-3xl font-bold text-text-primary tracking-tight">
+                EFREN<span className="text-text-secondary">.</span>
+              </span>
             </div>
 
             <nav className="flex-row md:gap-8 lg:gap-10 hidden lg:flex items-center">

@@ -34,10 +34,10 @@ export default function Project() {
         </FadeDown>
 
         {/* Desktop View: Grid */}
-        <div className="hidden lg:grid max-w-7xl mx-auto grid-cols-3 gap-8 px-6 md:px-12">
+        <div className={`hidden lg:grid max-w-7xl mx-auto gap-8 px-6 md:px-12 ${projectList.length === 1 ? "grid-cols-1" : "grid-cols-3"}`}>
           {projectList.map((project, index) => (
             <FadeUp key={`desktop-${index}`}>
-              <GlareHover className="group flex flex-col h-full bg-background border border-text-secondary/20 hover:border-text-primary/50 rounded-xl overflow-hidden transition-all duration-500 shadow-sm hover:shadow-2xl">
+              <GlareHover className={`group flex flex-col h-full bg-background border border-text-secondary/20 hover:border-text-primary/50 rounded-xl overflow-hidden transition-all duration-500 shadow-sm hover:shadow-2xl ${projectList.length === 1 ? "w-full max-w-2xl mx-auto" : ""}`}>
                 <div className="relative overflow-hidden aspect-[16/10] bg-text-secondary/5 border-b border-text-secondary/10">
                   <Image src={project.imagePath} alt={project.title} fill className="object-cover transition-all duration-700 group-hover:scale-105" />
 
@@ -177,17 +177,6 @@ export default function Project() {
           </div>
         </div>
 
-        <FadeUp>
-          <div className="mt-16 flex justify-center w-full px-6">
-            <a href="https://github.com/RyHarJr" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-4 bg-background border border-text-secondary/20 text-text-primary hover:border-text-primary hover:bg-text-primary hover:text-background rounded-xl font-bold tracking-widest text-sm uppercase transition-all duration-300 ease-out group hover:-translate-y-1.5 hover:scale-[1.02] shadow-sm hover:shadow-xl">
-              <span>View More Project</span>
-              <svg className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
-          </div>
-        </FadeUp>
-
         <AnimatePresence>
           {isOpen !== null && activeProject && (
             <div className="fixed inset-0 z-50 flex items-center justify-center p-6">
@@ -268,50 +257,14 @@ export default function Project() {
 const projectList = [
   {
     index: 0,
-    imagePath: "/images/jadibotwa.jpeg",
-    title: "JadibotWA",
-    shortDescription: "Architected a code-free WhatsApp automation platform featuring live bot logs via WebSockets for real-time data, status monitoring, and scalable REST APIs.",
-    createdAt: "2025-05-10",
-    features: ["Live Bot Logs via WebSockets", "High-performance Microservices", "Multi-device Session Management", "AI-powered Chat Workflows"],
-    tech: ["Go (Fiber)", "PostgreSQL", "WhatsMeow", "Next.js", "TypeScript", "Tailwind CSS"],
-    githubUrl: "https://github.com/RyHarJr",
-    liveDemoUrl: "https://jadibotwa.xyz",
-    isPrivateRepo: true,
-  },
-  {
-    index: 1,
-    imagePath: "/images/ryharpanel.jpeg",
-    title: "RyHar Panel",
-    shortDescription: "Built a modern landing page and management platform for a Pterodactyl hosting service, focused on fast, responsive, and conversion-driven user experience.",
-    createdAt: "2025-08-05",
-    features: ["Pterodactyl Integration", "Automated Transaction Processing", "Payment Gateway", "SEO Optimization"],
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Express.js", "Prisma ORM", "MySQL"],
-    githubUrl: "https://github.com/RyHarJr",
-    liveDemoUrl: "https://ryhar-panel.my.id",
-    isPrivateRepo: true,
-  },
-  {
-    index: 2,
-    imagePath: "/images/portofolio.jpeg",
-    title: "RyHar Portfolio",
-    shortDescription: "Developed a personal portfolio website with a modern, responsive design focused on user experience to showcase profile, skills, and completed projects.",
+    imagePath: "/images/skycast.svg",
+    title: "SkyCast",
+    shortDescription: "Built a responsive weather dashboard with city search, location-based weather, current conditions, and a 5-day forecast.",
     createdAt: "2026-07-20",
-    features: ["Interactive Animations", "Responsive Design", "Modern UI/UX"],
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    githubUrl: "https://github.com/RyHarJr/portofoliov2",
-    liveDemoUrl: "https://ryhar.my.id",
+    features: ["City Search", "Location-Based Weather", "Current Conditions", "5-Day Forecast"],
+    tech: ["HTML", "CSS", "JavaScript", "OpenWeather API"],
+    githubUrl: "https://github.com/ton-zsh/Ton",
+    liveDemoUrl: "https://ton-zsh.github.io/Ton/",
     isPrivateRepo: false,
-  },
-  {
-    index: 3,
-    imagePath: "/images/restapi.jpeg",
-    title: "RyHar REST API",
-    shortDescription: "Developed a scalable REST API with Node.js and Express.js, featuring JWT authentication, database integration, and comprehensive error handling.",
-    createdAt: "2026-07-20",
-    features: ["JWT Authentication", "Database Integration", "Comprehensive Error Handling"],
-    tech: ["Node.js", "Express.js", "Prisma ORM", "PostgreSQL"],
-    githubUrl: "https://github.com/RyHarJr",
-    liveDemoUrl: "https://dash.ryhar.my.id",
-    isPrivateRepo: true,
   },
 ]

@@ -24,8 +24,8 @@ export default function About() {
               <Fade>
                 <div className="relative z-10 p-2 bg-background border border-text-secondary/10 rounded-3xl shadow-2xl overflow-hidden aspect-[4/5] w-full group transition-all duration-500 hover:shadow-[0_20px_40px_-5px_rgb(0,0,0,0.15)] dark:hover:shadow-[0_20px_40px_-5px_rgba(255,255,255,0.05)] hover:-translate-y-1">
                   <Image 
-                    src="/images/hero.jpg" 
-                    alt="Ahmad Rizki Hartawan" 
+                    src="/images/hero.png"
+                    alt="Efren Francis Anonuevo"
                     fill 
                     className="object-cover transition-all duration-700 scale-100 group-hover:scale-105 grayscale group-hover:grayscale-0 hover:grayscale-0" 
                     sizes="(max-width: 1024px) 100vw, 500px"
@@ -42,14 +42,14 @@ export default function About() {
               <div className="flex flex-col">
                 <Fade>
                   <h4 className="text-lg md:text-xl font-bold text-text-primary mb-4 flex items-center border-b border-text-secondary/20 pb-4">Who Am I</h4>
-                  <p className="text-base text-text-secondary leading-relaxed font-medium">Saya Full Stack Developer yang berpengalaman dalam merancang dan mengembangkan aplikasi web menggunakan Node.js, Express.js, Laravel, React, Next.js, TypeScript, Prisma, dan MySQL. Saya terampil dalam membangun REST APIs, mengintegrasikan layanan pihak ketiga, dan sistem otomatisasi.</p>
+                  <p className="text-base text-text-secondary leading-relaxed font-medium">I am a Full Stack Developer experienced in designing and developing web applications using Node.js, Express.js, Laravel, React, Next.js, TypeScript, Prisma, and MySQL. I am skilled in building REST APIs, integrating third-party services, and creating automation systems.</p>
                 </Fade>
               </div>
               
               <div className="flex flex-col">
                 <Fade>
                   <h4 className="text-lg md:text-xl font-bold text-text-primary mb-4 flex items-center border-b border-text-secondary/20 pb-4">My Approach</h4>
-                  <p className="text-base text-text-secondary leading-relaxed font-medium">Saya berkomitmen untuk memberikan solusi yang efisien, mudah dikelola, dan skalabel melalui praktik terbaik pengembangan perangkat lunak (best software development practices).</p>
+                  <p className="text-base text-text-secondary leading-relaxed font-medium">I am committed to delivering efficient, maintainable, and scalable solutions by following software development best practices.</p>
                 </Fade>
               </div>
             </div>
@@ -63,21 +63,21 @@ export default function About() {
                 <FadeLeft delay={0.1}>
                   <div className="flex flex-col p-2 -m-2 rounded-xl transition-colors duration-300 hover:bg-thirdary/40">
                     <span className="text-xs uppercase tracking-widest font-bold text-text-secondary mb-1">Name</span>
-                    <span className="text-base font-semibold text-text-primary">Ahmad Rizki Hartawan</span>
+                    <span className="text-base font-semibold text-text-primary">Efren Francis Anonuevo</span>
                   </div>
                 </FadeLeft>
 
                 <FadeLeft delay={0.2}>
                   <div className="flex flex-col p-2 -m-2 rounded-xl transition-colors duration-300 hover:bg-thirdary/40">
                     <span className="text-xs uppercase tracking-widest font-bold text-text-secondary mb-1">Place of Birth</span>
-                    <span className="text-base font-semibold text-text-primary">Palembang, Indonesia</span>
+                    <span className="text-base font-semibold text-text-primary">Legazpi City, Albay, Philippines</span>
                   </div>
                 </FadeLeft>
 
                 <FadeLeft delay={0.3}>
                   <div className="flex flex-col p-2 -m-2 rounded-xl transition-colors duration-300 hover:bg-thirdary/40">
                     <span className="text-xs uppercase tracking-widest font-bold text-text-secondary mb-1">Phone</span>
-                    <span className="text-base font-semibold text-text-primary">+62 895-0818-8642</span>
+                    <span className="text-base font-semibold text-text-primary">+63 964 733 5844</span>
                   </div>
                 </FadeLeft>
 
@@ -91,8 +91,8 @@ export default function About() {
                 <FadeLeft delay={0.5}>
                   <div className="flex flex-col p-2 -m-2 rounded-xl transition-colors duration-300 hover:bg-thirdary/40">
                     <span className="text-xs uppercase tracking-widest font-bold text-text-secondary mb-1">Email</span>
-                    <a href="mailto:a.rizkihartawan04@gmail.com" className="text-base font-semibold text-text-primary hover:text-text-secondary transition-colors underline decoration-text-secondary/30 underline-offset-4">
-                      a.rizkihartawan04@gmail.com
+                    <a href="mailto:efrenjranonuevo@gmail.com" className="text-base font-semibold text-text-primary hover:text-text-secondary transition-colors underline decoration-text-secondary/30 underline-offset-4">
+                      efrenjranonuevo@gmail.com
                     </a>
                   </div>
                 </FadeLeft>
@@ -100,7 +100,7 @@ export default function About() {
                 <FadeLeft delay={0.6}>
                   <div className="flex flex-col p-2 -m-2 rounded-xl transition-colors duration-300 hover:bg-thirdary/40">
                     <span className="text-xs uppercase tracking-widest font-bold text-text-secondary mb-1">Education</span>
-                    <span className="text-base font-semibold text-text-primary">Universitas Multi Data Palembang</span>
+                    <span className="text-base font-semibold text-text-primary">Computer Communication Development Institute</span>
                   </div>
                 </FadeLeft>
               </div>

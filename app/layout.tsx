@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "RyHar Portfolio",
     images: [
       {
-        url: "/images/hero.jpg",
+        url: "/images/hero.png",
         width: 1200,
         height: 630,
         alt: "RyHar Portfolio",
@@ -39,13 +39,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "RyHar | Portfolio",
     description: "Personal portfolio of RyHar. Software Developer specializing in Next.js, Node.js, and modern web development.",
-    images: ["/images/hero.jpg"],
+    images: ["/images/hero.png"],
     creator: "@RyHar",
   },
   icons: {
-    icon: "/images/hero.jpg",
-    shortcut: "/images/hero.jpg",
-    apple: "/images/hero.jpg",
+    icon: "/images/hero.png",
+    shortcut: "/images/hero.png",
+    apple: "/images/hero.png",
   },
   alternates: {
     canonical: "/",
@@ -69,4 +69,3 @@ export default function RootLayout({
     </html>
   )
 }
-
